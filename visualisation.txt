@@ -1,0 +1,24 @@
+COMP6214 Open Data Innovation Coursework 1
+LYKA THOMAI
+Student ID : 29679893
+
+
+
+The website has been hosted in the ECS web space. 
+The link for the website is the following:
+			http://students.ecs.soton.ac.uk/tl3n17/
+It contains a visualisation of the data using Stacked Bar Chart. 
+In addition, there is a description of what the visualisation illustrates, who the intended audience is, and how the visualisation is interactive.
+Users are not expected to do something specific to host a copy of the visualisation. 
+In case the user has the D3 library in his computer the only thing he needs is the main.html file, the main.js file, and the style.css. 
+By running the main.html the visualisation is presented.
+
+The audience to which this visualisation concerns is analysed inside the website.
+More specifically, by pressing the button "Who the intended audience is" information about the audience appears.
+
+In addition, the interactivity of the visualisation is discussed in the website in the button "How the visualisation is interactive".
+
+For the visualisation four columns of the cleaned database were used, COMPLETION_DATE, ESTIMATED_COMPLETION_DATE, ACTUAL_COST, and ESTIMATED_COST. 
+These columns needed modification to know whether the Departments finished the projects ahead of schedule and within their budget. 
+Thus, the first step was to create two new columns with the difference between the Actual and the Projected Completion date, and the difference between the Actual and the Estimated Cost.
+The next step was to create a column which indicates the category (in time-in budget, in time-overbudget, overtime-overbudget, overtime-in budget) each project belongs to, and finally, sum each category.

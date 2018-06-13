@@ -1,0 +1,130 @@
+<!--helped by: http://bl.ocks.org/yuuniverse4444/8325617-->
+<!DOCTYPE html>
+<html>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title>D3 Visualisation</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+    crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <div>
+    <h2 ><p class="font-weight-bold">COMP6214 Open Data Innovation Coursework 1 </p></h2>
+    <h4 class="font-weight-bold"><p align="center">Lyka Thomai <br>
+        student ID : 29679893</p></h4>
+
+    </div>
+
+
+    <div class="container">
+        <div id="svg">
+            <script src="main.js"></script>
+            
+        </div>
+
+    </div>
+
+    <div class="column2">
+        <div class="text">
+            <div id="accordion">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                What the visualisation shows
+                          </button>
+                        </h5>
+                      </div>
+                  
+                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                                <p align="justify"> The bar chart has been created using the data from five different departments of US government. 
+                                  It illustrates the number of projects from each department divided by how efficient they were. The efficiency of each project was measured in four categories. 
+                                  More specifically each project may belong in one of the following categories: in time and in budget, in time and overbudget, overtime and in budget, and overtime and overbudget.
+                                  The first category consists of the projects that have been completed in time and haven’t exceeded their initial budget. 
+                                  The second and the third category show the projects that are over time and in budget, and vice versa. 
+                                  Finally, the last category contains the projects that are out of time and budget.
+                                        </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How the visualisation is interactive
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                                <p align="justify"> As far as the interactivity of the graph we can observe that it consists of three things. 
+                                First, it provides animated switching of data by clicking the information in the legends. 
+                                Each department consists of the sum of the projects of each category. When the user clicks on one category, the graph is updated and only the corresponding values are presented. 
+                                In case this feature is enabled, all the other options are disabled, and the user can only click the same category, so as the graph to return to its initial state.
+                                In addition, the graph supports interactive information by moving the cursor over each one of the bars’ rectangles. 
+                                By moving the cursor over the rectangle, users can be informed about the total number of projects for each category. 
+                                This feature is functional simultaneously with the animation over the bars.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Who the intended audience is
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                                <p align="justify">This illustration will be useful both for government, supervisors, and project managers. 
+                                Another possible audience could be investors that want to invest money in projects or departments or assign a new possible project. 
+                                In that case, knowing the most efficient department would be an advantage for them. 
+                                Since we are processing data that are related with projects the most important factors are the duration of the projects and the budget constraints. 
+                                With the stacked bar chart project managers can be informed about the number of projects that have exceeded either the projected completion date or the projected cost. 
+                                Moreover, they can observe the projects that finished on time or even earlier and with no extra cost. 
+                                This information is crucial for managers, and government since it can help them take decisions on various subjects. 
+                                Firstly, they can decide whether they should increase the funds in some departments or decrease them based on their consistency in schedule. 
+                                Secondly, with this chart, managers can resolve problems of overbudgeting or out of time. Knowing that information, they can reallocate projects to different departments that still have money to spend. 
+                                Finally, they can observe which departments have the maximum number of successful projects, e.g. projects that are on-time and in-budget.</p>
+                        </div>
+                      </div>
+                      
+                    </div>
+
+                    <div class="card">
+                            <div class="card-header" id="headingFour">
+                              <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Why choosing bar chart is appropriate for the data
+                                </button>
+                              </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                              <div class="card-body">
+                                      <p align="justify">Bar chart is chosen because it is one of the most familiar options as it is easy to interpret. It is useful since the data we want to present is classified in ordinal categories and bar graphs are used to compare things between different groups. More specifically, stacked bar chart is designed for comparing total number of different data and it is easy for the audience to understand the big picture without much focus on the details. 
+                                          Finally, it helps to compare totals and notice sharp changes at the item level that are likely to have the most influence. </p>
+                              </div>
+                            </div>
+                            
+                          </div>
+
+                  </div>
+        </div>
+   </div>
+
+
+</body>
+</html>
